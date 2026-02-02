@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2Ks Financial Services | Wealth & Planning Portal</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #2c3e50;
+            --accent: #e7f3ff;
+            --white: #ffffff;
+            --text: #333333;
+        }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            color: var(--text); 
+            line-height: 1.6;
+            background-color: #fcfcfc;
+        }
+        
+        /* Navigation Header */
+        header {
+            background: var(--white);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .logo { font-weight: 800; font-size: 1.5rem; color: var(--primary); text-decoration: none; }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 86, 179, 0.85), rgba(44, 62, 80, 0.95)), 
+                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; letter-spacing: -1px; }
+        .hero p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; }
+
+        /* Search Container */
+        .search-wrapper {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .search-mock {
+            width: 100%;
+            padding: 18px 30px;
+            border-radius: 50px;
+            border: none;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            outline: none;
+        }
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* Category Grid */
+        .content-container { max-width: 1200px; margin: -60px auto 60px; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            border-top: 4px solid transparent;
+        }
+        .card:hover { 
+            transform: translateY(-12px); 
+            border-top: 4px solid var(--primary);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.15);
+        }
+        .card h3 { color: var(--primary); font-size: 1.5rem; margin-top: 0; }
+        .card p { color: #666; font-size: 1rem; }
+        
+        .footer { text-align: center; padding: 60px 20px; color: #999; font-size: 0.9rem; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="logo">2Ks FINANCIAL</a>
+        <div style="font-size: 0.8rem; color: #888;">Portal Version: 2026.1</div>
+    </header>
+
+    <section class="hero">
+        <h1>Navigate Your Future</h1>
+        <p>Your one-stop destination for financial expertise, local branch support, and professional wealth advice.</p>
+        
+        <div class="search-wrapper">
+            <input type="text" class="search-mock" placeholder="Try 'Retirement Planning' or 'Collingswood'...">
+            <button class="search-btn">Search</button>
+        </div>
+    </section>
+
+    <div class="content-container">
+        <div class="grid">
+            <a href="/advisors/index.html" class="card">
+                <h3>Expert Advisors</h3>
+                <p>Browse our directory of 117 certified financial planners and wealth managers.</p>
+                <span style="color: var(--primary); font-weight: bold;">View Directory →</span>
+            </a>
+            
+            <a href="/locations/index.html" class="card">
+                <h3>Local Branches</h3>
+                <p>Find addresses, hours, and contact details for our 130 neighborhood locations.</p>
+                <span style="color: var(--primary); font-weight: bold;">Find a Branch →</span>
+            </a>
+            
+            <a href="/articles/index.html" class="card">
+                <h3>Wealth Library</h3>
+                <p>Explore 75 deep-dive articles on budgeting, tax strategies, and estate planning.</p>
+                <span style="color: var(--primary); font-weight: bold;">Read Articles →</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 2Ks Woodworking & Financial Services. All rights reserved.<br>
+        Serving the Collingswood, NJ community and beyond.
+    </div>
+
+</body>
+</html>
