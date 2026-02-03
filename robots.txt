@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /advisors/
+Disallow: /locations/
+Disallow: /articles/
