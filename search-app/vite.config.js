@@ -16,7 +16,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Points directly to the SearchStax theme in your node_modules
-      '@searchstax-theme': path.resolve(__dirname, 'node_modules/@searchstax-inc/searchstudio-ux-vue/dist/styles/mainTheme.css')
+      '@searchstax-theme': path.resolve(__dirname, 'node_modules/@searchstax-inc/searchstudio-ux-js/dist/styles/mainTheme.css')
     },
   },
 })
