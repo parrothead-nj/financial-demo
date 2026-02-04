@@ -2,7 +2,7 @@ import '@searchstax-theme'
 import { createApp } from 'vue'
 import App from './App.vue'
 
-// This uses your alias from vite.config.js to grab the CSS directly
-import '@searchstax-theme' 
+// This MUST be a direct import to be bundled
+import '../node_modules/@searchstax-inc/searchstudio-ux-js/dist/styles/mainTheme.css'
 
 createApp(App).mount('#app')
